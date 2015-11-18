@@ -4,7 +4,7 @@ Theme URI: http://djmcloud.danieljmckeown.com/theme12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A versatile theme from Love Birds Consulting (2015)
-Version: 0.2.0-beta2
+Version: 0.2.0-beta3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-12
@@ -1289,7 +1289,7 @@ body {
 .col-lg-3, .large-3 {
 	max-width: 225px;
 	display: inline-block;
-	margin-right: 5px;
+	margin-right: 0px;
 	margin-left: 10px;
 	margin-top: 3px;
 	margin-bottom: 2px;
@@ -1299,7 +1299,7 @@ body {
 .col-lg-4, .large-4 {
 	max-width: 300px;
 	display: inline-block;
-	margin-right: 5px;
+	margin-right: 0px;
 	margin-left: 10px;
 	margin-top: 3px;
 	margin-bottom: 2px;
@@ -1369,7 +1369,7 @@ body {
 .col-lg-11, .large-11 {
 	max-width: 850px;
 	display: inline-block;
-	margin-right: 5px;
+	margin-right: 0px;
 	margin-left: 11px;
 	margin-top: 3px;
 	margin-bottom: 2px;
@@ -1776,10 +1776,20 @@ td {
 	}
 }
 
+body {
+	width: 99%;
+}
 @media screen and (max-width: 799px) {
+	nav, header {
+		margin-left: 0px;
+		margin-right: 0px;
+
+	}
 	main.site-main {
-		margin-left: 15px;
+		margin-left: 5px;
 		margin-top: -55px;
+		padding-right: 7px;
+		padding-left: 1px;
 	}
 	h1.entry-title {
 		font-size: 22px;
@@ -1796,6 +1806,9 @@ td {
 	h1.site-title a:visited {
 		color: SlateGray !important;
 	}
+	div#secondary {
+		margin-left: 15px;
+	}
 }
 
 footer {
@@ -1804,7 +1817,7 @@ footer {
 	}
 
 footer.site-footer {
-	background: SeaShell;
+	background: Snow;
 	padding-left: 30px;
 	}
 
@@ -1868,7 +1881,7 @@ article p {
 }
 
 nav.main-navigation {
-	background: snow;
+	background: WhiteSmoke;
 	}
 
 audio {
@@ -1879,6 +1892,10 @@ audio {
 div#header_image {
 	padding-bottom: 35px;
 	margin-top: -20px;
+}
+
+aside h1 {
+	font-size: 16px;
 }
 
 /*--------------------------------------------------------------
