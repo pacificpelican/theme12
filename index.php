@@ -8,7 +8,7 @@
   * E.g., it puts together the home page when no home.php file exists.
   * Learn more: http://codex.wordpress.org/Template_Hierarchy
   *
-  * @package Green Lake
+  * @package Theme 12
   */
 
  get_header(); ?>
@@ -30,8 +30,9 @@
  				?>
 
  			<?php endwhile; ?>
-
- 			<?php the_posts_pagination(); ?>
+            <div id="paginator" class="btn btn-normal pagination_nav">
+     			<?php the_posts_pagination(); ?>
+            <div>
 
  		<?php else : ?>
 

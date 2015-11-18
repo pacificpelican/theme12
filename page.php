@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package Green Lake
+ * @package Theme 12
  */
 
 get_header(); ?>

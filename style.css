@@ -4,11 +4,11 @@ Theme URI: http://djmcloud.danieljmckeown.com/theme12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A versatile theme from Love Birds Consulting (2015)
-Version: 0.2.0-RC-2
+Version: 0.2.0-RC-4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-12
-Tags: two columns, light
+Tags: two-columns, light
 
 Theme 12 is a fork of Green Lake theme (http://djmcloud.danieljmckeown.com/greenlake/)
 Green Lake is based on free software including:
@@ -1379,6 +1379,13 @@ div.entry-content li {
 
 strong {
 	font-weight: bolder;
+}
+
+div#paginator {
+	outline-style: double;
+	outline-width: thin;
+	background-color: GhostWhite;
+	font-size: 20px;
 }
 
 h1.site-title {

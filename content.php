@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Green Lake
+ * @package Theme 12
  */
 ?>
 

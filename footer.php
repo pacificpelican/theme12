@@ -4,7 +4,7 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package Green Lake
+ * @package Theme 12
  */
 ?>
 
@@ -12,7 +12,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a> <i><?php bloginfo( 'description' ); ?></i>
+			<a href="<?php echo esc_url( home_url() ); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a> <i><?php bloginfo( 'description' ); ?></i>
 			|
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'theme-12' ) ); ?>"><?php printf( __( 'Powered by %s', 'theme-12' ), 'WordPress' ); ?></a>
 			<span class="sep"> & </span>

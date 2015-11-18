@@ -2,7 +2,7 @@
 /**
  * The template for displaying 404 pages (not found).
  *
- * @package Green Lake
+ * @package Theme 12
  */
 
 get_header(); ?>
@@ -39,10 +39,10 @@ get_header(); ?>
 					</div><!-- .widget -->
 					<?php endif; ?>
 
-					<?php
+					<?php //  FORGET THIS
 						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'theme-12' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
+				//		$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'theme-12' ), convert_smilies( ':)' ) ) . '</p>';
+				//		the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 					?>
 
 					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>

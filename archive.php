@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package Green Lake
+ * @package Theme 12
  */
 
 get_header(); ?>

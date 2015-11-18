@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package greenlake
+ * @package Theme 12
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -12,7 +12,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<?
+<?php
 echo "<meta name='description' content='";
 echo bloginfo('name');
 echo ": ";
@@ -26,12 +26,12 @@ echo "'>";
 
 <div class="supermegacontainer" id="containerzero">
 <nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e( '☰', 'greenlake' ); ?></button>
+			<button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e( '☰', 'theme-12' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
 <div class="megacontainer" id="containerportOFF">
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'greenlake' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'theme-12' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
