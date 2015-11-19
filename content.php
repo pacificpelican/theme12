@@ -19,6 +19,11 @@
 
 	<div class="entry-content">
 		<?php
+			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+				the_post_thumbnail();
+			}
+		?>
+		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
 				__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'theme-12' ),

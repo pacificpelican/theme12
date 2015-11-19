@@ -4,7 +4,7 @@ Theme URI: http://djmcloud.danieljmckeown.com/theme12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A versatile blog theme from Love Birds Consulting (Nov. 2015)
-Version: 0.2.0-RC-8
+Version: 0.2.0-RC-9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-12
@@ -1296,6 +1296,22 @@ footer.entry-footer {
 	font-size: 0.8rem;
 }
 
+span.current {
+	color: LightSlateGray;
+}
+
+div.comment-content {
+	font-family: "Karla", Helvetica, sans-serif;
+}
+
+div#respond {
+	font-family: "Exo 2", Helvetica, sans-serif;
+}
+
+img.size-post-thumbnail {
+	margin-bottom: 11px;
+}
+
 /*--------------------------------------------------------------
 15.0 Webfonts
 --------------------------------------------------------------*/
@@ -1367,20 +1383,16 @@ footer.entry-footer {
     src: local("Exo 2"),local(Exo2-Regular),url(//fonts.gstatic.com/s/exo2/v3/1f-JR30cwCpEua5F7Wpkjg.eot?#) format("eot"),url(//fonts.gstatic.com/s/exo2/v3/-A4eIjQkAwKL411pgtQ4VA.woff2) format("woff2"),url(//fonts.gstatic.com/s/exo2/v3/8C2PVL2WIMUnPF90ukjrZQ.woff) format("woff");
 }
 div.entry-content, main {
-	font-family: "Lato", sans-serif !important;
-}
-
-div.entry-content, main {
-	font-family: "Lato", sans-serif !important;
+	font-family: "Lato", Helvetica, sans-serif !important;
 }
 
 div.entry-content table {
-	font-family: "Open Sans", sans-serif !important;
+	font-family: "Open Sans", Futura, sans-serif !important;
 	font-size: 15px;
 }
 
 div.entry-content li {
-	font-family: "Exo 2", sans-serif !important;
+	font-family: "Exo 2", Futura, sans-serif !important;
 }
 
 strong {
@@ -1393,7 +1405,7 @@ article.type-page {
 
 article.type-page h1 {
 	font-size: 2.1rem;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", Futura, sans-serif;
 	margin-bottom: -20px;
 	margin-left: 11px;
 }
@@ -1470,7 +1482,7 @@ h1.entry-title, nav {
    src: local("Quattrocento Sans Bold"),local(QuattrocentoSans-Bold),url(//fonts.gstatic.com/s/quattrocentosans/v8/tXSgPxDl7Lk8Zr_5qX8FIaD2fnm4z6Nq0x6aGUXpBdU.eot?#) format("eot"),url(//fonts.gstatic.com/s/quattrocentosans/v8/tXSgPxDl7Lk8Zr_5qX8FIbvMLSVzqOGkoxdgTSsKqWM.woff2) format("woff2"),url(//fonts.gstatic.com/s/quattrocentosans/v8/tXSgPxDl7Lk8Zr_5qX8FIQfd-b-I5PxxcmB4_-MNcqw.woff) format("woff");
 }
 aside {
-   font-family: "Quattrocento Sans";
+   font-family: "Quattrocento Sans", sans-serif;
 }
 @font-face {
    font-family: "Signika Negative";
