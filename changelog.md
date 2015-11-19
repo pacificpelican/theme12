@@ -125,4 +125,8 @@ Nov. 12, 2015
 
 v.0.2.0
 Nov.18, 2015
--first version of Theme 12
+-first version of Theme 12:
+	-new Webfonts
+	-many small styling tweaks
+	-comments support
+	-etc.

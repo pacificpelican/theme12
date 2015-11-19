@@ -34,9 +34,9 @@
  				?>
 
  			<?php endwhile; ?>
-            <div id="paginator" class="btn btn-normal pagination_nav">
+
      			<?php the_posts_pagination(); ?>
-            <div>
+        
 
  		<?php else : ?>
 
