@@ -123,10 +123,16 @@ Nov. 12, 2015
 
 ------in November 2015 Theme 12 was forked from Theme 11.-------
 
-v.0.2.0
+v0.2.0
 Nov.18, 2015
 -first version of Theme 12:
 	-new Webfonts
 	-many small styling tweaks
 	-comments support
 	-etc.
+
+v0.2.2
+Nov. 19, 2015
+-use CSS to make hamburger button instead of Unicode symbol
+-move around some CSS in style.css to the proper sections
+-remove unused greenlake.css and greenlake2.css

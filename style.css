@@ -4,7 +4,7 @@ Theme URI: http://djmcloud.danieljmckeown.com/theme12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A versatile blog theme from Love Birds Consulting (Nov. 2015)
-Version: 0.2.1
+Version: 0.2.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-12
@@ -1176,7 +1176,6 @@ body {
 	nav, header {
 		margin-left: 0px;
 		margin-right: 0px;
-
 	}
 	main.site-main {
 		margin-left: 5px;
@@ -1312,6 +1311,70 @@ img.size-post-thumbnail {
 	margin-bottom: 11px;
 }
 
+/*----------  This is for the hamburger button seen in the mobile nav menu
+	via: https://css-tricks.com/three-line-menu-navicon/
+	*/
+
+.box-shadow-menu {
+  position: relative;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  margin-top: -13px;
+  margin-left: 7px;
+}
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 2.5em;
+  height: 0.25em;
+  background: black;
+  box-shadow:
+    0 0.5em 0 0 black,
+    0 0.99em 0 0 black;
+}
+
+button.menu-toggle {
+	height: 55px;
+	width: 75px;
+}
+
+/*-----------------------------------
+		*/
+
+strong {
+	font-weight: bolder;
+	}
+
+article.type-page {
+	margin-top: 10px;
+	}
+
+article.type-page h1 {
+	font-size: 2.1rem;
+	font-family: "Open Sans", Futura, sans-serif;
+	margin-bottom: -20px;
+	margin-left: 11px;
+		}
+
+nav.pagination {
+	outline-style: double;
+	outline-width: thin;
+	outline-color: invert;
+	background-color: GhostWhite;
+	font-size: 20px;
+	width: 250px;
+		}
+
+#f04header {
+	margin-top: 75px;
+		}
+
+span.current {
+	margin-left: 5px;
+		}
+
 /*--------------------------------------------------------------
 15.0 Webfonts
 --------------------------------------------------------------*/
@@ -1393,38 +1456,6 @@ div.entry-content table {
 
 div.entry-content li {
 	font-family: "Exo 2", Futura, sans-serif !important;
-}
-
-strong {
-	font-weight: bolder;
-}
-
-article.type-page {
-	margin-top: 10px;
-}
-
-article.type-page h1 {
-	font-size: 2.1rem;
-	font-family: "Open Sans", Futura, sans-serif;
-	margin-bottom: -20px;
-	margin-left: 11px;
-}
-
-nav.pagination {
-	outline-style: double;
-	outline-width: thin;
-	outline-color: invert;
-	background-color: GhostWhite;
-	font-size: 20px;
-	width: 250px;
-}
-
-#f04header {
-	margin-top: 75px;
-}
-
-span.current {
-	margin-left: 5px;
 }
 
 h1.site-title {

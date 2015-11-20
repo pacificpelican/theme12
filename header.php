@@ -26,7 +26,7 @@ echo "'>";
 
 <div class="supermegacontainer" id="containerzero">
 <nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e( '☰', 'theme-12' ); ?></button>
+			<button class="menu-toggle" aria-controls="menu" aria-expanded="false"><a href="#menu" class="box-shadow-menu"></a></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
 <div class="megacontainer" id="containerportOFF">
