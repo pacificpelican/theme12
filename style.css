@@ -4,7 +4,7 @@ Theme URI: http://djmcloud.danieljmckeown.com/theme12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A versatile blog theme from Love Birds Consulting (Nov. 2015)
-Version: 0.2.2
+Version: 0.2.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-12
@@ -1346,18 +1346,15 @@ button.menu-toggle {
 strong {
 	font-weight: bolder;
 	}
-
 article.type-page {
 	margin-top: 10px;
 	}
-
 article.type-page h1 {
 	font-size: 2.1rem;
 	font-family: "Open Sans", Futura, sans-serif;
 	margin-bottom: -20px;
 	margin-left: 11px;
 		}
-
 nav.pagination {
 	outline-style: double;
 	outline-width: thin;
@@ -1366,15 +1363,34 @@ nav.pagination {
 	font-size: 20px;
 	width: 250px;
 		}
-
 #f04header {
 	margin-top: 75px;
 		}
-
 span.current {
 	margin-left: 5px;
 		}
-
+footer {
+	font-family: "Signika Negative";
+		}
+div.entry-content, main {
+	font-family: "Lato", Helvetica, sans-serif !important;
+		}
+div.entry-content table {
+	font-family: "Open Sans", Futura, sans-serif !important;
+	font-size: 15px;
+		}
+div.entry-content li {
+	font-family: "Exo 2", Futura, sans-serif !important;
+		}
+h1.site-title {
+	font-family: "Exo 2", sans-serif;
+		}
+h1.entry-title, nav {
+	font-family: "Karla";
+		}
+aside {
+	font-family: "Quattrocento Sans", sans-serif;
+		}
 /*--------------------------------------------------------------
 15.0 Webfonts
 --------------------------------------------------------------*/
@@ -1445,22 +1461,6 @@ span.current {
     font-weight: 400;
     src: local("Exo 2"),local(Exo2-Regular),url(//fonts.gstatic.com/s/exo2/v3/1f-JR30cwCpEua5F7Wpkjg.eot?#) format("eot"),url(//fonts.gstatic.com/s/exo2/v3/-A4eIjQkAwKL411pgtQ4VA.woff2) format("woff2"),url(//fonts.gstatic.com/s/exo2/v3/8C2PVL2WIMUnPF90ukjrZQ.woff) format("woff");
 }
-div.entry-content, main {
-	font-family: "Lato", Helvetica, sans-serif !important;
-}
-
-div.entry-content table {
-	font-family: "Open Sans", Futura, sans-serif !important;
-	font-size: 15px;
-}
-
-div.entry-content li {
-	font-family: "Exo 2", Futura, sans-serif !important;
-}
-
-h1.site-title {
-	font-family: "Exo 2", sans-serif;
-}
 @font-face {
    font-family: Karla;
    font-style: italic;
@@ -1484,9 +1484,6 @@ h1.site-title {
    font-style: normal;
    font-weight: 700;
    src: local("Karla Bold"),local(Karla-Bold),url(//fonts.gstatic.com/s/karla/v5/s-O-g1eMGKQFvcIY8dKM9fesZW2xOQ-xsNqO47m55DA.eot?#) format("eot"),url(//fonts.gstatic.com/s/karla/v5/suoMYBGv5sGCUIrF9mVTffesZW2xOQ-xsNqO47m55DA.woff2) format("woff2"),url(//fonts.gstatic.com/s/karla/v5/3nZS3BKzlvhkwl4yjCQcjPesZW2xOQ-xsNqO47m55DA.woff) format("woff");
-}
-h1.entry-title, nav {
-   font-family: "Karla";
 }
 @font-face {
    font-family: "Quattrocento Sans";
@@ -1512,9 +1509,6 @@ h1.entry-title, nav {
    font-weight: 700;
    src: local("Quattrocento Sans Bold"),local(QuattrocentoSans-Bold),url(//fonts.gstatic.com/s/quattrocentosans/v8/tXSgPxDl7Lk8Zr_5qX8FIaD2fnm4z6Nq0x6aGUXpBdU.eot?#) format("eot"),url(//fonts.gstatic.com/s/quattrocentosans/v8/tXSgPxDl7Lk8Zr_5qX8FIbvMLSVzqOGkoxdgTSsKqWM.woff2) format("woff2"),url(//fonts.gstatic.com/s/quattrocentosans/v8/tXSgPxDl7Lk8Zr_5qX8FIQfd-b-I5PxxcmB4_-MNcqw.woff) format("woff");
 }
-aside {
-   font-family: "Quattrocento Sans", sans-serif;
-}
 @font-face {
    font-family: "Signika Negative";
    font-style: normal;
@@ -1539,6 +1533,63 @@ aside {
    font-weight: 700;
    src: local("Signika Negative Bold"),local(SignikaNegative-Bold),url(//fonts.gstatic.com/s/signikanegative/v5/q5TOjIw4CenPw6C-TW06FtXjYxO97oFJTyX5HIM9DT0.eot?#) format("eot"),url(//fonts.gstatic.com/s/signikanegative/v5/q5TOjIw4CenPw6C-TW06FuQ6_Aau4Cy11rcU9CM9cFc.woff2) format("woff2"),url(//fonts.gstatic.com/s/signikanegative/v5/q5TOjIw4CenPw6C-TW06FqqHaFHOcO_tRLsnTxFPLE0.woff) format("woff");
 }
-footer {
-   font-family: "Signika Negative";
+@font-face {
+   font-family: "Open Sans";
+   font-style: italic;
+   font-weight: 300;
+   src: local("Open Sans Light Italic"),local(OpenSansLight-Italic),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxrXcjzEax2LfQAlK8DdMzhA.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxko2lTMeWA_kmIyWrkNCwPc.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxh_xHqYgAV9Bl_ZQbYUxnQU.woff) format("woff");
+}
+@font-face {
+   font-family: "Open Sans";
+   font-style: italic;
+   font-weight: 400;
+   src: local("Open Sans Italic"),local(OpenSans-Italic),url(//fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBmfQcKutQXcIrRfyR5jdjY8.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBo4P5ICox8Kq3LLUNMylGO4.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBobN6UDyHWBl620a-IRfuBk.woff) format("woff");
+}
+@font-face {
+   font-family: "Open Sans";
+   font-style: italic;
+   font-weight: 600;
+   src: local("Open Sans Semibold Italic"),local(OpenSans-SemiboldItalic),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxo8mkAiYpFywqG2RvpzBnTU.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxl2umOyRU7PgRiv8DXcgJjk.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxn5HxGBcBvicCpTp6spHfNo.woff) format("woff");
+}
+@font-face {
+   font-family: "Open Sans";
+   font-style: italic;
+   font-weight: 700;
+   src: local("Open Sans Bold Italic"),local(OpenSans-BoldItalic),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxrFt29aCHKT7otDW9l62Aag.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxolIZu-HDpmDIZMigmsroc4.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxjqR_3kx9_hJXbbyU8S6IN0.woff) format("woff");
+}
+@font-face {
+   font-family: "Open Sans";
+   font-style: italic;
+   font-weight: 800;
+   src: local("Open Sans Extrabold Italic"),local(OpenSans-ExtraboldItalic),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxphT2rkLFFMVLymfgfmWVtI.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxnibbpXgLHK_uTT48UMyjSM.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxkCDe67GEgBv_HnyvHTfdew.woff) format("woff");
+}
+@font-face {
+   font-family: "Open Sans";
+   font-style: normal;
+   font-weight: 300;
+   src: local("Open Sans Light"),local(OpenSans-Light),url(//fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format("woff");
+}
+@font-face {
+   font-family: "Open Sans";
+   font-style: normal;
+   font-weight: 400;
+   src: local("Open Sans"),local(OpenSans),url(//fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+@font-face {
+   font-family: "Open Sans";
+   font-style: normal;
+   font-weight: 600;
+   src: local("Open Sans Semibold"),local(OpenSans-Semibold),url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format("woff");
+}
+@font-face {
+   font-family: "Open Sans";
+   font-style: normal;
+   font-weight: 700;
+   src: local("Open Sans Bold"),local(OpenSans-Bold),url(//fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzHZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format("woff");
+}
+@font-face {
+   font-family: "Open Sans";
+   font-style: normal;
+   font-weight: 800;
+   src: local("Open Sans Extrabold"),local(OpenSans-Extrabold),url(//fonts.gstatic.com/s/opensans/v13/EInbV5DfGHOiMmvb1Xr-hnZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/EInbV5DfGHOiMmvb1Xr-hugdm0LZdjqr5-oayXSOefg.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/EInbV5DfGHOiMmvb1Xr-hnhCUOGz7vYGh680lGh-uXM.woff) format("woff");
 }
