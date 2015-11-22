@@ -4,7 +4,7 @@ Theme URI: http://djmcloud.danieljmckeown.com/theme12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A versatile blog theme from Love Birds Consulting (Nov. 2015)
-Version: 0.2.3
+Version: 0.2.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-12
@@ -1322,6 +1322,7 @@ img.size-post-thumbnail {
   margin-top: -13px;
   margin-left: 7px;
 }
+
 .box-shadow-menu:before {
   content: "";
   position: absolute;
@@ -1346,15 +1347,18 @@ button.menu-toggle {
 strong {
 	font-weight: bolder;
 	}
+
 article.type-page {
 	margin-top: 10px;
 	}
+
 article.type-page h1 {
 	font-size: 2.1rem;
 	font-family: "Open Sans", Futura, sans-serif;
 	margin-bottom: -20px;
 	margin-left: 11px;
 		}
+
 nav.pagination {
 	outline-style: double;
 	outline-width: thin;
@@ -1363,31 +1367,40 @@ nav.pagination {
 	font-size: 20px;
 	width: 250px;
 		}
+
 #f04header {
 	margin-top: 75px;
 		}
+
 span.current {
 	margin-left: 5px;
 		}
+
 footer {
-	font-family: "Signika Negative";
+	font-family: "Signika Negative", Helvetica, sans-serif;
 		}
+
 div.entry-content, main {
 	font-family: "Lato", Helvetica, sans-serif !important;
 		}
+
 div.entry-content table {
 	font-family: "Open Sans", Futura, sans-serif !important;
 	font-size: 15px;
 		}
+
 div.entry-content li {
 	font-family: "Exo 2", Futura, sans-serif !important;
 		}
+
 h1.site-title {
 	font-family: "Exo 2", sans-serif;
 		}
+
 h1.entry-title, nav {
-	font-family: "Karla";
+	font-family: "Karla", serif ;
 		}
+
 aside {
 	font-family: "Quattrocento Sans", sans-serif;
 		}
