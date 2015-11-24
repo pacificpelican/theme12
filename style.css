@@ -4,7 +4,7 @@ Theme URI: http://djmcloud.danieljmckeown.com/theme-12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A versatile blog theme from Love Birds Consulting (Nov. 2015)
-Version: 0.5.1
+Version: 0.5.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-12
@@ -1665,7 +1665,7 @@ article.format-quote {
 article.format-quote div.entry-content {
 	padding-left: 30px;
 	font-family: "PT Serif", serif !important;
-	outline-color: PapayaWhip;
+	outline-color: FloralWhite;
 	outline-style: double;
 	padding-top: 30px;
 }
@@ -1701,8 +1701,6 @@ main.home-main article.format-aside span.posted-on, main.home-main article.forma
 article.format-video div.entry-content {
 	padding-left: 30px;
 	font-family: "PT Serif", serif !important;
-	border-color: FloralWhite;
-	border-style: double;
 	padding-top: 30px;
 }
 
@@ -1710,4 +1708,18 @@ article.format-video div.entry-content iframe, article.format-video div.entry-co
 	outline-color: Black;
 	outline-style: solid;
 	outline-width: 12px;
+}
+
+article.format-video div.entry-content embed, article.format-video div.entry-content object {
+	outline-color: Black;
+	outline-style: solid;
+	outline-width: 12px;
+}
+
+video {
+	max-width: 100%;
+}
+
+article.format-video div.entry-content {
+	margin-right: 8px;
 }
