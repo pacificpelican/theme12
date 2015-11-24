@@ -4,15 +4,15 @@ Theme URI: http://djmcloud.danieljmckeown.com/theme-12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A versatile blog theme from Love Birds Consulting (Nov. 2015)
-Version: 0.3.1
+Version: 0.5.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-12
 Tags: two-columns, light, custom-header, custom-menu, right-sidebar, featured-images
 
-Theme 12 is a fork of Green Lake theme (http://djmcloud.danieljmckeown.com/greenlake/)
+Theme 12 is a fork of Green Lake theme v0.3.3 http://djmcloud.danieljmckeown.com/greenlake/
 Green Lake is based on free software including:
-Underscores [_s] v1.0.0 http://underscores.me/ (C) 2012-2015 Automattic, Inc.
+Underscores [_s] theme v1.0.0 http://underscores.me/ (C) 2012-2015 Automattic, Inc.
 
 This theme, like WordPress and the _s and Green Lake themes, is licensed under the GNU GPL (v2 or later):
 http://www.gnu.org/licenses/gpl-2.0.html
@@ -1607,6 +1607,30 @@ aside {
    font-weight: 800;
    src: local("Open Sans Extrabold"),local(OpenSans-Extrabold),url(//fonts.gstatic.com/s/opensans/v13/EInbV5DfGHOiMmvb1Xr-hnZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/EInbV5DfGHOiMmvb1Xr-hugdm0LZdjqr5-oayXSOefg.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/EInbV5DfGHOiMmvb1Xr-hnhCUOGz7vYGh680lGh-uXM.woff) format("woff");
 }
+@font-face {
+   font-family: "PT Serif";
+   font-style: italic;
+   font-weight: 400;
+   src: local("PT Serif Italic"),local(PTSerif-Italic),url(//fonts.gstatic.com/s/ptserif/v8/03aPdn7fFF3H6ngCgAlQzFQlYEbsez9cZjKsNMjLOwM.eot?#) format("eot"),url(//fonts.gstatic.com/s/ptserif/v8/03aPdn7fFF3H6ngCgAlQzPk_vArhqVIZ0nv9q090hN8.woff2) format("woff2"),url(//fonts.gstatic.com/s/ptserif/v8/03aPdn7fFF3H6ngCgAlQzBsxEYwM7FgeyaSgU71cLG0.woff) format("woff");
+}
+@font-face {
+   font-family: "PT Serif";
+   font-style: italic;
+   font-weight: 700;
+   src: local("PT Serif Bold Italic"),local(PTSerif-BoldItalic),url(//fonts.gstatic.com/s/ptserif/v8/Foydq9xJp--nfYIx2TBz9Wzklk6MJbhg7BmBP42CjCQ.eot?#) format("eot"),url(//fonts.gstatic.com/s/ptserif/v8/Foydq9xJp--nfYIx2TBz9YWiMMZ7xLd792ULpGE4W_Y.woff2) format("woff2"),url(//fonts.gstatic.com/s/ptserif/v8/Foydq9xJp--nfYIx2TBz9QFhaRv2pGgT5Kf0An0s4MM.woff) format("woff");
+}
+@font-face {
+   font-family: "PT Serif";
+   font-style: normal;
+   font-weight: 400;
+   src: local("PT Serif"),local(PTSerif-Regular),url(//fonts.gstatic.com/s/ptserif/v8/0Om6Iw1e323HjeZHy8W4rfesZW2xOQ-xsNqO47m55DA.eot?#) format("eot"),url(//fonts.gstatic.com/s/ptserif/v8/I-OtoJZa3TeyH6D9oli3ifesZW2xOQ-xsNqO47m55DA.woff2) format("woff2"),url(//fonts.gstatic.com/s/ptserif/v8/sDRi4fY9bOiJUbgq53yZCfesZW2xOQ-xsNqO47m55DA.woff) format("woff");
+}
+@font-face {
+   font-family: "PT Serif";
+   font-style: normal;
+   font-weight: 700;
+   src: local("PT Serif Bold"),local(PTSerif-Bold),url(//fonts.gstatic.com/s/ptserif/v8/QABk9IxT-LFTJ_dQzv7xpGfQcKutQXcIrRfyR5jdjY8.eot?#) format("eot"),url(//fonts.gstatic.com/s/ptserif/v8/QABk9IxT-LFTJ_dQzv7xpI4P5ICox8Kq3LLUNMylGO4.woff2) format("woff2"),url(//fonts.gstatic.com/s/ptserif/v8/QABk9IxT-LFTJ_dQzv7xpIbN6UDyHWBl620a-IRfuBk.woff) format("woff");
+}
 
 /*--------------------------------------------------------------
 16.0 Post Types
@@ -1627,4 +1651,63 @@ article.format-image div.entry-content {
 
 article.format-image footer.entry-footer {
 	margin-top: 11px;
+}
+
+article.format-quote h1.entry-title {
+	display: none;
+}
+
+article.format-quote {
+	margin-top: 50px;
+	margin-bottom: -20px;
+}
+
+article.format-quote div.entry-content {
+	padding-left: 30px;
+	font-family: "PT Serif", serif !important;
+	outline-color: PapayaWhip;
+	outline-style: double;
+	padding-top: 30px;
+}
+
+main.home-main article.format-quote span.posted-on, main.home-main article.format-quote span.byline {
+	display: none;
+}
+
+article.format-aside {
+	margin-top: 70px;
+	margin-bottom: 10px;
+}
+
+article.format-aside footer.entry-footer, article.format-quote footer.entry-footer {
+	visibility: hidden;
+}
+
+article.format-aside h1.entry-title {
+	display: none;
+}
+
+article.format-aside div.entry-content {
+	padding: 15px 20px 1px 40px;
+	font-family: "Exo 2", Futura, sans-serif !important;
+	background-color: SeaShell;
+	width: auto;
+}
+
+main.home-main article.format-aside span.posted-on, main.home-main article.format-aside span.byline {
+	display: none;
+}
+
+article.format-video div.entry-content {
+	padding-left: 30px;
+	font-family: "PT Serif", serif !important;
+	border-color: FloralWhite;
+	border-style: double;
+	padding-top: 30px;
+}
+
+article.format-video div.entry-content iframe {
+	outline-color: Black;
+	outline-style: solid;
+	outline-width: 12px;
 }

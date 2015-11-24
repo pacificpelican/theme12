@@ -14,13 +14,13 @@
  get_header(); ?>
 
  	<div id="primary" class="content-area col-lg-11">
- 		<main id="main" class="site-main" role="main">
+ 		<main id="main" class="site-main home-main" role="main">
 
  		<?php if ( have_posts() ) : ?>
 
  			<?php /* Start the Loop */ ?>
  			<?php while ( have_posts() ) : the_post(); ?>
-                
+
  				<?php
  					/* Include the Post-Format-specific template for the content.
  					 * If you want to override this in a child theme, then include a file
