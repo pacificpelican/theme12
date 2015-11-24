@@ -4,7 +4,7 @@ Theme URI: http://djmcloud.danieljmckeown.com/theme12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A versatile blog theme from Love Birds Consulting (Nov. 2015)
-Version: 0.2.4
+Version: 0.3.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-12
@@ -45,6 +45,7 @@ It is offered with the hope that it's useful but without guarantee.
 13.0 Ryukyu CSS
 14.0 Spacing Adjustments
 15.0 Web Fonts
+16.0 Post Types formatting
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -1605,4 +1606,25 @@ aside {
    font-style: normal;
    font-weight: 800;
    src: local("Open Sans Extrabold"),local(OpenSans-Extrabold),url(//fonts.gstatic.com/s/opensans/v13/EInbV5DfGHOiMmvb1Xr-hnZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/EInbV5DfGHOiMmvb1Xr-hugdm0LZdjqr5-oayXSOefg.woff2) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/EInbV5DfGHOiMmvb1Xr-hnhCUOGz7vYGh680lGh-uXM.woff) format("woff");
+}
+
+/*--------------------------------------------------------------
+16.0 Post Types
+--------------------------------------------------------------*/
+
+article.format-image img {
+	background-color: Snow;
+	padding: 10px;
+}
+
+article.format-image div.entry-content {
+	background-color: WhiteSmoke;
+	padding: 10px;
+	outline-color: MintCream;
+	outline-width: 2px;
+	outline-style: double;
+}
+
+article.format-image footer.entry-footer {
+	margin-top: 11px;
 }
