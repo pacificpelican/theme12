@@ -4,7 +4,7 @@ Theme URI: http://djmcloud.danieljmckeown.com/theme-12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A versatile blog theme from Love Birds Consulting (Nov. 2015)
-Version: 0.5.2
+Version: 0.5.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-12
@@ -825,7 +825,8 @@ a:active {
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
-object {
+object,
+video {
 	max-width: 100%;
 }
 
@@ -1631,6 +1632,12 @@ aside {
    font-weight: 700;
    src: local("PT Serif Bold"),local(PTSerif-Bold),url(//fonts.gstatic.com/s/ptserif/v8/QABk9IxT-LFTJ_dQzv7xpGfQcKutQXcIrRfyR5jdjY8.eot?#) format("eot"),url(//fonts.gstatic.com/s/ptserif/v8/QABk9IxT-LFTJ_dQzv7xpI4P5ICox8Kq3LLUNMylGO4.woff2) format("woff2"),url(//fonts.gstatic.com/s/ptserif/v8/QABk9IxT-LFTJ_dQzv7xpIbN6UDyHWBl620a-IRfuBk.woff) format("woff");
 }
+@font-face {
+   font-family: "Share Tech Mono";
+   font-style: normal;
+   font-weight: 400;
+   src: local("Share Tech Mono"),local(ShareTechMono-Regular),url(//fonts.gstatic.com/s/sharetechmono/v5/RQxK-3RA0Lnf3gnnnNrAsTwtzT4qNq-faudv5qbO9-U.eot?#) format("eot"),url(//fonts.gstatic.com/s/sharetechmono/v5/RQxK-3RA0Lnf3gnnnNrAsYdJ2JT0J65PSe7wdxAnx_I.woff2) format("woff2"),url(//fonts.gstatic.com/s/sharetechmono/v5/RQxK-3RA0Lnf3gnnnNrAsUYuTAAIFFn5GTWtryCmBQ4.woff) format("woff");
+}
 
 /*--------------------------------------------------------------
 16.0 Post Types
@@ -1716,10 +1723,15 @@ article.format-video div.entry-content embed, article.format-video div.entry-con
 	outline-width: 12px;
 }
 
-video {
-	max-width: 100%;
-}
-
 article.format-video div.entry-content {
 	margin-right: 8px;
+}
+
+code {
+	font-family: "Share Tech Mono", monospace; !important;
+	padding-left: 10px;
+	background-color: GhostWhite;
+	outline-color: LightYellow;
+	outline-style: solid;
+	outline-width: 1px;
 }
