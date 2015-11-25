@@ -4,7 +4,7 @@ Theme URI: http://djmcloud.danieljmckeown.com/theme-12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A versatile blog theme from Love Birds Consulting (Nov. 2015)
-Version: 0.7.1
+Version: 0.8.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-12
@@ -1688,13 +1688,17 @@ main.home-main article.format-quote span.posted-on, main.home-main article.forma
 	display: none;
 }
 
-article.format-aside {
-	margin-top: 80px;
+article.format-aside, article.post_format-post-format-link {
+	margin-top: 60px;
 	margin-bottom: 10px;
 }
 
 article.format-aside footer.entry-footer, article.format-quote footer.entry-footer {
 	visibility: hidden;
+}
+
+article.post_format-post-format-link footer.entry-footer {
+	display: none;
 }
 
 article.format-aside h1.entry-title {
@@ -1742,6 +1746,7 @@ code {
 	outline-style: solid;
 	outline-width: 1px;
 }
+
 @media screen and (min-width: 800px) {
 	main.page-main {
 		margin-left: 48px;
@@ -1751,4 +1756,29 @@ code {
 article.sticky {
 	border-bottom-style: dotted;
 	border-color: black;
+}
+
+article.post_format-post-format-link a {
+	font-weight: bolder;
+	font-family: "Karla", Helvetica, sans-serif !important;
+}
+
+article.post_format-post-format-link h1.entry-title {
+	display: none;
+}
+
+article.format-quote {
+	margin-top: 50px;
+	margin-bottom: -20px;
+}
+
+article.post_format-post-format-link div.entry-content {
+	padding: 15px 20px 1px 40px;
+	background-color: Azure;
+	width: auto;
+}
+
+main.home-main article.post_format-post-format-link span.posted-on,
+main.home-main article.post_format-post-format-link span.byline {
+	display: none;
 }

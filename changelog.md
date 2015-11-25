@@ -136,3 +136,15 @@ Nov. 19, 2015
 -use CSS to make hamburger button instead of Unicode symbol
 -move around some CSS in style.css to the proper sections
 -remove unused greenlake.css and greenlake2.css
+
+v0.8.0
+Nov. 24, 2015
+-CSS styling [dotted bottom border] for sticky posts
+-CSS styling for numerous post types:
+	-post
+	-aside
+	-image
+	-link
+	-quote
+	-video
+-numerous bufixes and improvements
