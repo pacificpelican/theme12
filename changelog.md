@@ -148,3 +148,7 @@ Nov. 24, 2015
 	-quote
 	-video
 -numerous bufixes and improvements
+
+v0.9.2
+Nov. 26, 2015
+-update screenshot
