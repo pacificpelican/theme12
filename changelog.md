@@ -152,3 +152,7 @@ Nov. 24, 2015
 v0.9.2
 Nov. 26, 2015
 -update screenshot
+
+0.9.3
+Nov. 28, 2015
+-add CSS for audio and status post types
