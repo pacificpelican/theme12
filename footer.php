@@ -16,9 +16,7 @@
 			|
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'theme-12' ) ); ?>"><?php printf( __( 'Powered by %s', 'theme-12' ), 'WordPress' ); ?></a>
 			<span class="sep"> & </span>
-		<!--	Theme: <a class="grey-text text-lighten-3" href="<?php $my_theme = wp_get_theme(); echo $my_theme->get( 'ThemeURI' ); ?>"><?php echo wp_get_theme(); ?></a> version <?php $my_theme = wp_get_theme(); echo $my_theme->get( 'Version' ); ?> -->
-			<?php echo "<a href='http://djmcloud.danieljmckeown.com/theme-12'>Theme 12</a> "; ?>
-			<?php //	$my_theme = wp_get_theme(); echo "v" . $my_theme->get( 'Version' ); ?>
+			<?php echo "Theme 12 "; ?>
 			<?php echo " by <a href='http://danmckeown.info/' rel='designer'>Dan McKeown</a>"; ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

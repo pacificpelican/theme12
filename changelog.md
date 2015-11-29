@@ -156,3 +156,8 @@ Nov. 26, 2015
 0.9.3
 Nov. 28, 2015
 -add CSS for audio and status post types
+
+0.9.4
+Nov. 28, 2015
+-code cleanup for footer
+-new description
