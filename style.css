@@ -4,7 +4,7 @@ Theme URI: http://djmcloud.danieljmckeown.com/theme-12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A handcrafted theme designed to be readable, responsive, and uncompromising
-Version: 0.9.5
+Version: 0.9.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-12
@@ -1671,9 +1671,9 @@ article.format-quote h1.entry-title {
 	display: none;
 }
 
-article.format-quote {
-	margin-top: 50px;
-	margin-bottom: -20px;
+article.format-quote span {
+	margin-top: 40px;
+	margin-bottom: 20px;
 }
 
 article.format-quote div.entry-content {
@@ -1688,9 +1688,24 @@ main.home-main article.format-quote span.posted-on, main.home-main article.forma
 	display: none;
 }
 
-article.format-aside, article.post_format-post-format-link {
-	margin-top: 50px;
-	margin-bottom: -30px;
+article.format-quote {
+	margin-top: 27px;
+	margin-bottom: 0px;
+}
+
+article.format-standard {
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+
+article.format-aside {
+	margin-top: 20px;
+	margin-bottom: -40px;
+}
+
+article.post_format-post-format-link {
+	margin-top: 30px;
+	margin-bottom: -20px;
 }
 
 article.format-aside footer.entry-footer, article.format-quote footer.entry-footer {
@@ -1698,7 +1713,7 @@ article.format-aside footer.entry-footer, article.format-quote footer.entry-foot
 }
 
 article.post_format-post-format-link footer.entry-footer {
-	display: none;
+	visibility: hidden;
 }
 
 article.format-aside h1.entry-title {
@@ -1767,10 +1782,6 @@ article.post_format-post-format-link h1.entry-title {
 	display: none;
 }
 
-article.format-quote {
-	margin-top: 50px;
-	margin-bottom: -20px;
-}
 
 article.post_format-post-format-link div.entry-content {
 	padding: 15px 20px 1px 40px;

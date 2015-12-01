@@ -165,3 +165,6 @@ Nov. 28, 2015
 0.9.5
 -fix link in readme
 -spacing adjustments for index page
+
+0.9.6
+-CSS spacing enhancements for index.php
