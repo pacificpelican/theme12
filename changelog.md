@@ -161,3 +161,7 @@ Nov. 28, 2015
 Nov. 28, 2015
 -code cleanup for footer
 -new description
+
+0.9.5
+-fix link in readme
+-spacing adjustments for index page
