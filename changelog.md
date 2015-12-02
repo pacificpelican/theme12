@@ -1,4 +1,5 @@
-changelog for Green Lake theme (the predecessor theme to Theme 10) http://djmcloud.danieljmckeown.com/greenlake/
+changelog for Green Lake theme through Theme 12
+http://djmcloud.danieljmckeown.com/theme-12/
 
 v0.0.1
 January 26, 2015
@@ -182,3 +183,4 @@ note:
 1.0.0
 -custom CSS: eliminate titles for updates blogs w/Twitter & Facebook categories
   [visibility: hidden, and display: none, and margin adjustments - important?]
+-release version
