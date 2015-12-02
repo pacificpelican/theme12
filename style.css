@@ -1826,13 +1826,13 @@ article.category-facebook h1.entry-title {
 	visibility: hidden;
 }
 
-article.category-twitter div.entry-footer,
-article.category-facebook div.entry-footer
+article.category-twitter footer.entry-footer,
+article.category-facebook footer.entry-footer
 {
 	display: none;
 }
 
 article.category-twitter div.entry-meta,
 article.category-facebook div.entry-meta {
-	visibility: hidden;
+	display: none;
 }
