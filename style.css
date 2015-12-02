@@ -1847,10 +1847,6 @@ article.category-facebook header.entry-header {
 	display: none;
 }
 
-header.site-header {
-	z-index: 1000;
-}
-
-article {
-	z-index: 100;
+header#masthead {
+	padding-bottom: +30px;
 }
