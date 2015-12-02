@@ -1823,7 +1823,7 @@ article.format-audio iframe, article.format-audio object {
 
 article.category-twitter,
 article.category-facebook {
-	margin-top: -45px;
+	margin-top: -45px !important;
 }
 
 article.category-twitter h1.entry-title,
