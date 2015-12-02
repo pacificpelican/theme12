@@ -1846,3 +1846,11 @@ article.category-twitter header.entry-header,
 article.category-facebook header.entry-header {
 	display: none;
 }
+
+div.site-branding {
+	z-index: 1000;
+}
+
+article {
+	z-index: 100;
+}
