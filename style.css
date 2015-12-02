@@ -4,7 +4,7 @@ Theme URI: http://djmcloud.danieljmckeown.com/theme-12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A handcrafted theme designed to be readable, responsive, and uncompromising
-Version: 0.9.6
+Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-12
@@ -1819,4 +1819,9 @@ article.format-audio audio, article.format-audio embed,
 article.format-audio iframe, article.format-audio object {
 	outline-color: #ffe5e5;
 	outline-style: double;
+}
+
+article.category-twitter h1.entry-title,
+article.category-facebook h1.entry-title {
+	display: none;
 }

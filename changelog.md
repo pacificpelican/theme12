@@ -168,3 +168,16 @@ Nov. 28, 2015
 
 0.9.6
 -CSS spacing enhancements for index.php
+
+note:
+-blog default front page is a typical index page now [and has been for a while]
+  (unlike in Theme 11), but:
+	-if a page named "full archives" [slug 'full-archives'] is created it
+	  becomes a page that lists all the posts in the blog; and it can be set as
+	  front page: thus making Theme 12 act like Theme 11
+-this blog semi-deprecates category and tag pages: it will use the archive.php
+  template to serve such pages but intentionally does not link to them from the
+  index page or single posts
+
+1.0.0
+-custom CSS: eliminate titles for updates blogs w/Twitter & Facebook categories
