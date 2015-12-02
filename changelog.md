@@ -186,3 +186,6 @@ note:
    with padding, entry-header, less padding, zh30]
 -adjust site branding: a little more room
 -release version
+
+1.0.1
+-minor CSS reorganization

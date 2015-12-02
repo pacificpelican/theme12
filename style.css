@@ -4,7 +4,7 @@ Theme URI: http://djmcloud.danieljmckeown.com/theme-12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A handcrafted theme designed to be readable, responsive, and uncompromising
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-12
@@ -904,7 +904,7 @@ video {
 /*--------------------------------------------------------------
 13.0 Ryukyu CSS (http://danmckeown.info/code/ryukyu)
 --------------------------------------------------------------*/
-/* This section based on: */
+/* This section contains CSS take from: */
 /*  Ryukyu CSS library by Dan McKeown copyright May-July 2015 								*/
 /*  http://danmckeown.info/code/ryukyu/												*/
 /*  v0.2.4  								Licensed under MIT license 					    */
@@ -1117,7 +1117,7 @@ img {
 
 table {
 	border-style: dotted;
-    border-width: 1px;
+  border-width: 1px;
 	border-color: #CCCCCC;
 	max-width: 100%;
 	height: auto;
@@ -1126,7 +1126,7 @@ table {
 
 td {
 	border-style: solid;
-    border-width: 1px;
+  border-width: 1px;
 	border-color: #DDDDDD;
 	padding-left: 10px;
 	padding-right: 7px;
@@ -1406,6 +1406,19 @@ h1.entry-title, nav {
 aside {
 	font-family: "Quattrocento Sans", sans-serif;
 		}
+
+header#masthead {
+	padding-bottom: +20px;
+		}
+		
+@media screen and (max-width: 800px) {
+	@-moz-document url-prefix() {
+		body {
+			max-width: 95%
+		}
+	}
+}
+
 /*--------------------------------------------------------------
 15.0 Webfonts
 --------------------------------------------------------------*/
@@ -1642,13 +1655,6 @@ aside {
 /*--------------------------------------------------------------
 16.0 Post Types
 --------------------------------------------------------------*/
-@media screen and (max-width: 800px) {
-	@-moz-document url-prefix() {
-		body {
-			max-width: 95%
-		}
-	}
-}
 
 article.format-image img {
 	background-color: Snow;
@@ -1782,7 +1788,6 @@ article.post_format-post-format-link h1.entry-title {
 	display: none;
 }
 
-
 article.post_format-post-format-link div.entry-content {
 	padding: 15px 20px 1px 40px;
 	background-color: Azure;
@@ -1845,8 +1850,4 @@ article.category-facebook div.entry-meta {
 article.category-twitter header.entry-header,
 article.category-facebook header.entry-header {
 	display: none;
-}
-
-header#masthead {
-	padding-bottom: +20px;
 }
