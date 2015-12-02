@@ -181,4 +181,4 @@ note:
 
 1.0.0
 -custom CSS: eliminate titles for updates blogs w/Twitter & Facebook categories
-  [visibility: hidden and display: none]
+  [visibility: hidden, and display: none, and margin adjustments]

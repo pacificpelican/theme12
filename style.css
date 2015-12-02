@@ -1821,6 +1821,11 @@ article.format-audio iframe, article.format-audio object {
 	outline-style: double;
 }
 
+article.category-twitter,
+article.category-facebook {
+	margin-top: -45px;
+}
+
 article.category-twitter h1.entry-title,
 article.category-facebook h1.entry-title {
 	visibility: hidden;
