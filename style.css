@@ -1841,3 +1841,8 @@ article.category-twitter div.entry-meta,
 article.category-facebook div.entry-meta {
 	display: none;
 }
+
+article.category-twitter header.entry-header,
+article.category-facebook header.entry-header {
+	display: none;
+}
