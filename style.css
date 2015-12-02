@@ -4,7 +4,7 @@ Theme URI: http://djmcloud.danieljmckeown.com/theme-12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A handcrafted theme designed to be readable, responsive, and uncompromising
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-12
@@ -1410,7 +1410,7 @@ aside {
 header#masthead {
 	padding-bottom: +20px;
 		}
-		
+
 @media screen and (max-width: 800px) {
 	@-moz-document url-prefix() {
 		body {
@@ -1779,7 +1779,8 @@ article.sticky {
 	border-color: black;
 }
 
-article.post_format-post-format-link a {
+article.post_format-post-format-link a,
+article.category-ifttt.tag-pinboard a {
 	font-weight: bolder;
 	font-family: "Karla", Helvetica, sans-serif !important;
 }
@@ -1788,7 +1789,8 @@ article.post_format-post-format-link h1.entry-title {
 	display: none;
 }
 
-article.post_format-post-format-link div.entry-content {
+article.post_format-post-format-link div.entry-content,
+article.category-ifttt.tag-pinboard {
 	padding: 15px 20px 1px 40px;
 	background-color: Azure;
 	width: auto;
@@ -1826,28 +1828,37 @@ article.format-audio iframe, article.format-audio object {
 	outline-style: double;
 }
 
-article.category-twitter,
-article.category-facebook {
+article.category-twitter.tag-social,
+article.category-facebook.tag-social {
 	padding-top: 10px !important;
 }
 
-article.category-twitter h1.entry-title,
-article.category-facebook h1.entry-title {
+article.category-twitter.tag-social h1.entry-title,
+article.category-facebook.tag-social h1.entry-title {
 	visibility: hidden;
 }
 
-article.category-twitter footer.entry-footer,
-article.category-facebook footer.entry-footer
+article.category-twitter.tag-social footer.entry-footer,
+article.category-facebook.tag-social footer.entry-footer
 {
 	display: none;
 }
 
-article.category-twitter div.entry-meta,
-article.category-facebook div.entry-meta {
+article.category-twitter.tag-social div.entry-meta,
+article.category-facebook.tag-social div.entry-meta {
 	display: none;
 }
 
-article.category-twitter header.entry-header,
-article.category-facebook header.entry-header {
+article.category-twitter.tag-social header.entry-header,
+article.category-facebook.tag-social header.entry-header {
 	display: none;
+}
+
+body.archive article.category-ifttt.tag-pinboard header.entry-header,
+article.category-ifttt.tag-pinboard div.entry-meta {
+	display: none;
+}
+
+article.category-ifttt.tag-pinboard h1.entry-title {
+	visibility: hidden;
 }

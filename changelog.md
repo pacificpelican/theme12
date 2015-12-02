@@ -189,3 +189,9 @@ note:
 
 1.0.1
 -minor CSS reorganization
+
+1.0.2
+-update screenshot
+-more specificity for Twitter and Facebook categories special formatting
+	(requires additional 'social' tag for posts to be treated specially)
+-styling for Pinboard link posts
