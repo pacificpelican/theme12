@@ -184,4 +184,5 @@ note:
 -custom CSS: eliminate titles for updates blogs w/Twitter & Facebook categories
   [visibility: hidden, and display: none, and margin adjustments, important,
    with padding, entry-header, less padding, zh30]
+-adjust site branding: a little more room
 -release version
