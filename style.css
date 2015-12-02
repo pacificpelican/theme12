@@ -1823,5 +1823,16 @@ article.format-audio iframe, article.format-audio object {
 
 article.category-twitter h1.entry-title,
 article.category-facebook h1.entry-title {
+	visibility: hidden;
+}
+
+article.category-twitter div.entry-footer,
+article.category-facebook div.entry-footer
+{
 	display: none;
+}
+
+article.category-twitter div.entry-meta,
+article.category-facebook div.entry-meta {
+	visibility: hidden;
 }
