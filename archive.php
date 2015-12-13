@@ -4,7 +4,7 @@
   *
   * This is the file to handle archives pages, tag and category pages, and more
   *
-  * @package Theme 12
+  * @package Fremont Cut
   */
 
  get_header(); ?>

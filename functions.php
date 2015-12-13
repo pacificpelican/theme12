@@ -2,7 +2,7 @@
 /**
  * Green Lake functions and definitions
  *
- * @package Theme 12
+ * @package fremont-cut
  */
 
 /**
@@ -16,27 +16,27 @@ function theme11_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( __( ', ', 'theme-12' ) );
+		$categories_list = get_the_category_list( __( ', ', 'fremont-cut' ) );
 		if ( $categories_list && greenlake_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( 'Posted in %1$s ', 'theme-12' ) . '</span>', $categories_list );
+			printf( '<span class="cat-links">' . __( 'Posted in %1$s ', 'fremont-cut' ) . '</span>', $categories_list );
 		}
 
 
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', __( ', ', 'theme-12' ) );
+		$tags_list = get_the_tag_list( '', __( ', ', 'fremont-cut' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( 'Tagged %1$s ', 'theme-12' ) . '</span>', $tags_list );
+			printf( '<span class="tags-links">' . __( 'Tagged %1$s ', 'fremont-cut' ) . '</span>', $tags_list );
 		}
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( __( 'Leave a comment ', 'theme-12' ), __( '1 Comment', 'theme-12' ), __( '% Comments', 'theme-12' ) );
+		comments_popup_link( __( 'Leave a comment ', 'fremont-cut' ), __( '1 Comment', 'fremont-cut' ), __( '% Comments', 'fremont-cut' ) );
 		echo '</span>';
 	}
 
-	edit_post_link( __( 'Edit', 'theme-12' ), '<span class="edit-link">', '</span>' );
+	edit_post_link( __( 'Edit', 'fremont-cut' ), '<span class="edit-link">', '</span>' );
 }
 
 if ( ! function_exists( 'greenlake_setup' ) ) :
@@ -55,7 +55,7 @@ function greenlake_setup() {
 	 * If you're building a theme based on Green Lake, use a find and replace
 	 * to change 'greenlake' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'theme-12', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'fremont-cut', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -77,7 +77,7 @@ function greenlake_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'theme-12' ),
+		'primary' => __( 'Primary Menu', 'fremont-cut' ),
 	) );
 
 	/*
@@ -112,7 +112,7 @@ add_action( 'after_setup_theme', 'greenlake_setup' );
  */
 function greenlake_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'theme-12' ),
+		'name'          => __( 'Sidebar', 'fremont-cut' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',

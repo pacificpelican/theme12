@@ -1,4 +1,4 @@
-[Theme 12](http://djmcloud.danieljmckeown.com/theme-12/) by [Dan McKeown](http://danmckeown.info) and [Love Birds Consulting](http://lovebirdsconsulting.com).
+[Fremont Cut](http://djmcloud.danieljmckeown.com/theme-12/) by [Dan McKeown](http://danmckeown.info) and [Love Birds Consulting](http://lovebirdsconsulting.com).
 =======
 
 A general purpose responsive blog theme.

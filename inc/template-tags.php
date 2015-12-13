@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Green Lake
+ * @package Fremont Cut
  */
 
 if ( ! function_exists( 'the_posts_navigation' ) ) :
@@ -20,15 +20,15 @@ function the_posts_navigation() {
 	}
 	?>
 	<nav class="navigation posts-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php _e( 'Posts navigation', 'theme-12' ); ?></h2>
+		<h2 class="screen-reader-text"><?php _e( 'Posts navigation', 'fremont-cut' ); ?></h2>
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( 'Older posts', 'theme-12' ) ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( __( 'Older posts', 'fremont-cut' ) ); ?></div>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts', 'theme-12' ) ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts', 'fremont-cut' ) ); ?></div>
 			<?php endif; ?>
 
 		</div><!-- .nav-links -->
@@ -53,7 +53,7 @@ function the_post_navigation() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'theme-12' ); ?></h2>
+		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'fremont-cut' ); ?></h2>
 		<div class="nav-links">
 			<?php
 				previous_post_link( '<div class="nav-previous">%link</div>', '%title' );
@@ -83,12 +83,12 @@ function greenlake_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		_x( 'Posted on %s', 'post date', 'theme-12' ),
+		_x( 'Posted on %s', 'post date', 'fremont-cut' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(
-		_x( 'by %s', 'post author', 'theme-12' ),
+		_x( 'by %s', 'post author', 'fremont-cut' ),
 		'<span class="author">' . esc_html( get_the_author() ) . '</span>'
 	);
 
@@ -107,7 +107,7 @@ function greenlake_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		echo "<span class='ct_section'>";
 		if ( get_the_category() && greenlake_categorized_blog() ) {
-		//	printf( '<span class="cat-links">' . __( 'Posted in %1$s ', 'theme-12' ) . '</span>', $categories_list );
+		//	printf( '<span class="cat-links">' . __( 'Posted in %1$s ', 'fremont-cut' ) . '</span>', $categories_list );
 		echo "Category: ";
 		}
 
@@ -116,14 +116,14 @@ function greenlake_entry_footer() {
   		  echo $category->cat_name . ' ';
   		  echo "</span>";
 		}
-		$categories_list = get_the_category_list( __( ', ', 'theme-12' ) );
+		$categories_list = get_the_category_list( __( ', ', 'fremont-cut' ) );
 		if ( $categories_list && greenlake_categorized_blog() ) {
-		//	printf( '<span class="cat-links">' . __( 'Posted in %1$s ', 'theme-12' ) . '</span>', $categories_list );
+		//	printf( '<span class="cat-links">' . __( 'Posted in %1$s ', 'fremont-cut' ) . '</span>', $categories_list );
 		}
 		echo "</span>";
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', __( ', ', 'theme-12' ) );
+		$tags_list = get_the_tag_list( '', __( ', ', 'fremont-cut' ) );
 		if ( $tags_list ) {
 		echo "<span class='tg_section'>";
 			echo "Tagged: ";
@@ -139,17 +139,17 @@ if ($posttags) {
 
 }
 		echo "</span>";
-		//	printf( '<span class="tags-links">' . __( 'Tagged %1$s ', 'theme-12' ) . '</span>', $tags_list );
+		//	printf( '<span class="tags-links">' . __( 'Tagged %1$s ', 'fremont-cut' ) . '</span>', $tags_list );
 		}
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( __( 'Leave a comment ', 'theme-12' ), __( '1 Comment', 'theme-12' ), __( '% Comments', 'theme-12' ) );
+		comments_popup_link( __( 'Leave a comment ', 'fremont-cut' ), __( '1 Comment', 'fremont-cut' ), __( '% Comments', 'fremont-cut' ) );
 		echo '</span>';
 	}
 
-	edit_post_link( __( 'Edit', 'theme-12' ), '<span class="edit-link">', '</span>' );
+	edit_post_link( __( 'Edit', 'fremont-cut' ), '<span class="edit-link">', '</span>' );
 }
 endif;
 
@@ -166,45 +166,45 @@ if ( ! function_exists( 'the_archive_title' ) ) :
  */
 function the_archive_title( $before = '', $after = '' ) {
 	if ( is_category() ) {
-		$title = sprintf( __( 'Category: %s', 'theme-12' ), single_cat_title( '', false ) );
+		$title = sprintf( __( 'Category: %s', 'fremont-cut' ), single_cat_title( '', false ) );
 	} elseif ( is_tag() ) {
-		$title = sprintf( __( 'Tag: %s', 'theme-12' ), single_tag_title( '', false ) );
+		$title = sprintf( __( 'Tag: %s', 'fremont-cut' ), single_tag_title( '', false ) );
 	} elseif ( is_author() ) {
-		$title = sprintf( __( 'Author: %s', 'theme-12' ), '<span class="vcard">' . get_the_author() . '</span>' );
+		$title = sprintf( __( 'Author: %s', 'fremont-cut' ), '<span class="vcard">' . get_the_author() . '</span>' );
 	} elseif ( is_year() ) {
-		$title = sprintf( __( 'Year: %s', 'theme-12' ), get_the_date( _x( 'Y', 'yearly archives date format', 'theme-12' ) ) );
+		$title = sprintf( __( 'Year: %s', 'fremont-cut' ), get_the_date( _x( 'Y', 'yearly archives date format', 'fremont-cut' ) ) );
 	} elseif ( is_month() ) {
-		$title = sprintf( __( 'Month: %s', 'theme-12' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'theme-12' ) ) );
+		$title = sprintf( __( 'Month: %s', 'fremont-cut' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'fremont-cut' ) ) );
 	} elseif ( is_day() ) {
-		$title = sprintf( __( 'Day: %s', 'theme-12' ), get_the_date( _x( 'F j, Y', 'daily archives date format', 'theme-12' ) ) );
+		$title = sprintf( __( 'Day: %s', 'fremont-cut' ), get_the_date( _x( 'F j, Y', 'daily archives date format', 'fremont-cut' ) ) );
 	} elseif ( is_tax( 'post_format' ) ) {
 		if ( is_tax( 'post_format', 'post-format-aside' ) ) {
-			$title = _x( 'Asides', 'post format archive title', 'theme-12' );
+			$title = _x( 'Asides', 'post format archive title', 'fremont-cut' );
 		} elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) {
-			$title = _x( 'Galleries', 'post format archive title', 'theme-12' );
+			$title = _x( 'Galleries', 'post format archive title', 'fremont-cut' );
 		} elseif ( is_tax( 'post_format', 'post-format-image' ) ) {
-			$title = _x( 'Images', 'post format archive title', 'theme-12' );
+			$title = _x( 'Images', 'post format archive title', 'fremont-cut' );
 		} elseif ( is_tax( 'post_format', 'post-format-video' ) ) {
-			$title = _x( 'Videos', 'post format archive title', 'theme-12' );
+			$title = _x( 'Videos', 'post format archive title', 'fremont-cut' );
 		} elseif ( is_tax( 'post_format', 'post-format-quote' ) ) {
-			$title = _x( 'Quotes', 'post format archive title', 'theme-12' );
+			$title = _x( 'Quotes', 'post format archive title', 'fremont-cut' );
 		} elseif ( is_tax( 'post_format', 'post-format-link' ) ) {
-			$title = _x( 'Links', 'post format archive title', 'theme-12' );
+			$title = _x( 'Links', 'post format archive title', 'fremont-cut' );
 		} elseif ( is_tax( 'post_format', 'post-format-status' ) ) {
-			$title = _x( 'Statuses', 'post format archive title', 'theme-12' );
+			$title = _x( 'Statuses', 'post format archive title', 'fremont-cut' );
 		} elseif ( is_tax( 'post_format', 'post-format-audio' ) ) {
-			$title = _x( 'Audio', 'post format archive title', 'theme-12' );
+			$title = _x( 'Audio', 'post format archive title', 'fremont-cut' );
 		} elseif ( is_tax( 'post_format', 'post-format-chat' ) ) {
-			$title = _x( 'Chats', 'post format archive title', 'theme-12' );
+			$title = _x( 'Chats', 'post format archive title', 'fremont-cut' );
 		}
 	} elseif ( is_post_type_archive() ) {
-		$title = sprintf( __( 'Archives: %s', 'theme-12' ), post_type_archive_title( '', false ) );
+		$title = sprintf( __( 'Archives: %s', 'fremont-cut' ), post_type_archive_title( '', false ) );
 	} elseif ( is_tax() ) {
 		$tax = get_taxonomy( get_queried_object()->taxonomy );
 		/* translators: 1: Taxonomy singular name, 2: Current taxonomy term */
-		$title = sprintf( __( '%1$s: %2$s', 'theme-12' ), $tax->labels->singular_name, single_term_title( '', false ) );
+		$title = sprintf( __( '%1$s: %2$s', 'fremont-cut' ), $tax->labels->singular_name, single_term_title( '', false ) );
 	} else {
-		$title = __( 'Archives', 'theme-12' );
+		$title = __( 'Archives', 'fremont-cut' );
 	}
 
 	/**

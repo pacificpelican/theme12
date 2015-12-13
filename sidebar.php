@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area.
  *
- * @package Theme 12
+ * @package Fremont Cut
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

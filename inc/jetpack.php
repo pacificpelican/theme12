@@ -3,7 +3,7 @@
  * Jetpack Compatibility File
  * See: http://jetpack.me/
  *
- * @package Green Lake
+ * @package Fremont Cut
  */
 
 /**

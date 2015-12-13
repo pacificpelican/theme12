@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Theme 12
+ * @package Fremont Cut
  */
 ?>
 

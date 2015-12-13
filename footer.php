@@ -4,7 +4,7 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package Theme 12
+ * @package Fremont Cut
  */
 ?>
 
@@ -14,9 +14,9 @@
 		<div class="site-info">
 			<a href="<?php echo esc_url( home_url() ); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a> <i><?php bloginfo( 'description' ); ?></i>
 			|
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'theme-12' ) ); ?>"><?php printf( __( 'Powered by %s', 'theme-12' ), 'WordPress' ); ?></a>
+			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'fremont-cut' ) ); ?>"><?php printf( __( 'Powered by %s', 'fremont-cut' ), 'WordPress' ); ?></a>
 			<span class="sep"> & </span>
-			<?php echo "Theme 12 "; ?>
+			<?php echo "Fremont Cut "; ?>
 			<?php echo " by <a href='http://danmckeown.info/' rel='designer'>Dan McKeown</a>"; ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

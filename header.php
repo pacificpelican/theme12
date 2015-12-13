@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package Theme 12
+ * @package Fremont Cut
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -31,7 +31,7 @@ echo "'>";
 		</nav><!-- #site-navigation -->
 <div class="megacontainer" id="containerportOFF">
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'theme-12' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'fremont-cut' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">

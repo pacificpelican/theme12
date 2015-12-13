@@ -1,4 +1,4 @@
-changelog for Green Lake theme through Theme 12
+changelog for Green Lake theme through Theme 12 to Fremont Cut
 http://djmcloud.danieljmckeown.com/theme-12/
 
 v0.0.1
@@ -198,3 +198,6 @@ note:
 
 1.0.3
 -link/Pinboard post format bugfix - {display: none} for entry title
+
+1.1.0
+-rename theme to Fremont Cut to comply with WordPress.org theme rules

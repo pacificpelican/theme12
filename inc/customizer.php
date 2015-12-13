@@ -2,7 +2,7 @@
 /**
  * Green Lake Theme Customizer
  *
- * @package Green Lake
+ * @package Fremont Cut
  */
 
 /**

@@ -1,22 +1,26 @@
 /*
-Theme Name: Theme 12
+Theme Name: Fremont Cut
 Theme URI: http://djmcloud.danieljmckeown.com/theme-12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A handcrafted theme designed to be readable, responsive, and uncompromising
-Version: 1.0.3
+Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: theme-12
+Text Domain: fremont-cut
 Tags: two-columns, light, custom-header, custom-menu, right-sidebar, featured-images
 
-Theme 12 is a versatile blog theme from Dan McKeown, copyright Nov. 2015.
-Theme 12 is a fork of Green Lake theme v0.3.3 http://djmcloud.danieljmckeown.com/greenlake/
+Fremont Cut (a fork of Theme 12) is a versatile blog theme from Dan McKeown, copyright Nov. 2015.
+Fremont Cut is an upstream fork of Green Lake theme v0.3.3 http://djmcloud.danieljmckeown.com/greenlake/
 Green Lake is based on free software including:
 Underscores [_s] theme v1.0.0 http://underscores.me/ (C) 2012-2015 Automattic, Inc.
 
 This theme is licensed under the GNU GPL (v2 or later):
 http://www.gnu.org/licenses/gpl-2.0.html
+
+Released right around the same time as WordPress 4.4, Fremont Cut strives to
+	offer cutting-edge support for WordPress-specific features like sticky
+	posts, link posts, asides, quotes, and even video and audio post types.
 
 */
 
@@ -905,9 +909,9 @@ video {
 13.0 Ryukyu CSS (http://danmckeown.info/code/ryukyu)
 --------------------------------------------------------------*/
 /* This section contains CSS take from: */
-/*  Ryukyu CSS library by Dan McKeown copyright May-July 2015 								*/
+/*  Ryukyu CSS library v0.2.4 by Dan McKeown copyright May-July 2015 								*/
 /*  http://danmckeown.info/code/ryukyu/												*/
-/*  v0.2.4  								Licensed under MIT license 					    */
+/*  											    */
 
 .il {
 	display: inline-block;
