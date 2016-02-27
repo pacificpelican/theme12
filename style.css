@@ -4,7 +4,7 @@ Theme URI: http://djmcloud.danieljmckeown.com/theme-12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A handcrafted theme designed to be readable, responsive, and uncompromising
-Version: 1.1.1
+Version: 1.2.0-beta1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: fremont-cut
@@ -21,6 +21,8 @@ http://www.gnu.org/licenses/gpl-2.0.html
 Released right around the same time as WordPress 4.4, Fremont Cut strives to
 	offer cutting-edge support for WordPress-specific features like sticky
 	posts, link posts, asides, quotes, and even video and audio post types.
+
+Note: Any page named "full archives" will act as a simple all-posts link list and nothing else
 
 */
 
@@ -1867,4 +1869,8 @@ article.category-ifttt.tag-pinboard h1.entry-title {
 article.category-ifttt.tag-pinboard footer
 {
 	visibility: hidden;
+}
+
+main#main {
+	background-color: White;
 }

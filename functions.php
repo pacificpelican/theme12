@@ -12,33 +12,6 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
 
-function theme11_entry_footer() {
-	// Hide category and tag text for pages.
-	if ( 'post' == get_post_type() ) {
-		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( __( ', ', 'fremont-cut' ) );
-		if ( $categories_list && greenlake_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( 'Posted in %1$s ', 'fremont-cut' ) . '</span>', $categories_list );
-		}
-
-
-
-		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', __( ', ', 'fremont-cut' ) );
-		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( 'Tagged %1$s ', 'fremont-cut' ) . '</span>', $tags_list );
-		}
-	}
-
-	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
-		comments_popup_link( __( 'Leave a comment ', 'fremont-cut' ), __( '1 Comment', 'fremont-cut' ), __( '% Comments', 'fremont-cut' ) );
-		echo '</span>';
-	}
-
-	edit_post_link( __( 'Edit', 'fremont-cut' ), '<span class="edit-link">', '</span>' );
-}
-
 if ( ! function_exists( 'greenlake_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -130,13 +103,6 @@ function greenlake_scripts() {
 
 //  ----------------------------
 	$themeloc = esc_url( get_template_directory_uri() );
-//	$srcjqry = "$themeloc/js/jquery-1.11.2.min.js";
-//	$srcfoundationjs = "$themeloc/js/foundation.min.js";
-
-//		wp_enqueue_script( "jqry", $srcjqry );
-//		wp_register_script( "foundationjs", $srcfoundationjs, array( 'jqry' ) );
-
-//		wp_enqueue_script( "foundationjs" );
 //  ----------------------------
 
 	wp_enqueue_style( 'greenlake-style', get_stylesheet_uri() );
