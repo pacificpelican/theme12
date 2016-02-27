@@ -4,7 +4,7 @@ Theme URI: http://djmcloud.danieljmckeown.com/theme-12/
 Author: Dan McKeown
 Author URI: http://danmckeown.info
 Description: A handcrafted theme designed to be readable, responsive, and uncompromising
-Version: 1.2.0-beta2
+Version: 1.2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: fremont-cut
@@ -20,6 +20,7 @@ http://www.gnu.org/licenses/gpl-2.0.html
 
 photo of Osprey nesting area in Washington state used in screenshot:
 copyright 2015 Dan McKeown, all rights reserved
+http://danmckeown.info
 
 Released right around the same time as WordPress 4.4, Fremont Cut strives to
 	offer cutting-edge support for WordPress-specific features like sticky
@@ -430,7 +431,7 @@ dd {
 	margin: 0 1.5em 1.5em;
 }
 
-img {
+img, caption img, caption {
 	height: auto; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
 }
@@ -1273,7 +1274,14 @@ nav li {
 
 nav li a, nav li a:visited {
 	color: SandyBrown;
+	background-color: WhiteSmoke;
+	background: WhiteSmoke;
 		}
+
+nav ul.sub-menu {
+		background-color: FloralWhite;
+		opacity: 1.0;
+}
 
 .entry-content {
 	margin-top: 41px;
@@ -1285,6 +1293,7 @@ article p {
 
 nav.main-navigation {
 	background: WhiteSmoke;
+	background-color: GhostWhite;
 	}
 
 audio {
