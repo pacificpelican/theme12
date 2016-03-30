@@ -212,3 +212,6 @@ note:
 -remove non-functioning 'most-used-categories' section from 404
 -modify footer for better translatability
 -template-page-full-archives.php replaces page-full-archives.php
+
+1.5.0
+-remove unnecessary comments, spaces

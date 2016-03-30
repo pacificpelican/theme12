@@ -106,16 +106,7 @@ function fremont_cut_entry_footer() {
 	if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
 		echo "<span class='ct_section'>";
-		if ( get_the_category() && fremont_cut_categorized_blog() ) {
-	//	printf( '<span class="cat-links">' . __( 'Posted in %1$s ', 'fremont-cut' ) . '</span>', $categories_list );
-	//	echo "Category: ";
-		}
-
-		// foreach((get_the_category()) as $category) {
-		// 	echo "<span class='ct_2'>";
-  // 		  echo $category->cat_name . ' ';
-  // 		  echo "</span>";
-		// }
+		
 		$categories_list = get_the_category_list( __( ', ', 'fremont-cut' ) );
 		if ( $categories_list && fremont_cut_categorized_blog() ) {
 			printf( '<span class="cat-links">' . __( 'Posted in %1$s ', 'fremont-cut' ) . '</span>', $categories_list );
@@ -126,18 +117,8 @@ function fremont_cut_entry_footer() {
 		$tags_list = get_the_tag_list( '', __( ', ', 'fremont-cut' ) );
 		if ( $tags_list ) {
 		echo "<span class='tg_section'>";
-//			echo "Tagged: ";
-//			echo get_the_tag_list();
+
 			$posttags = get_the_tags();
-if ($posttags) {
-
-	foreach($posttags as $tag) {
-//		echo "<span class='tg_2'>";
-//		echo $tag->name . ' ';
-//		echo "</span>";
-	}
-
-}
 		
 		printf( '<span class="tags-links">' . __( 'Tagged %1$s ', 'fremont-cut' ) . '</span>', $tags_list );
 		echo "</span>";
