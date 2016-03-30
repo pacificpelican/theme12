@@ -218,3 +218,6 @@ note:
 
 1.7.0
 -bugfix to change 'stargazer' to 'fremont_cut' in footer
+
+1.8.0
+-bugfix to change 'fremont_cut' to 'fremont-cut' in footer

@@ -14,7 +14,7 @@
 		<p class="credit">
 					<?php printf(	//	 via: https://github.com/justintadlock/stargazer/blob/master/footer.php#L16-L20
 						// Translators: 1 is current year, 2 is site name/link, 3 is WordPress name/link, and 4 is theme name/link. */
-						__( 'Copyright &#169; %1$s %2$s. Powered by %3$s and %4$s.', 'fremont_cut' ),
+						__( 'Copyright &#169; %1$s %2$s. Powered by %3$s and %4$s.', 'fremont-cut' ),
 						date_i18n( 'Y' ), fremont_cut_get_site_link(), fremont_cut_get_wp_link(), fremont_cut_get_theme_link()
 					); ?>
 		</p><!-- .credit -->
