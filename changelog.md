@@ -221,3 +221,7 @@ note:
 
 1.8.0
 -bugfix to change 'fremont_cut' to 'fremont-cut' in footer
+
+1.8.1
+-remove note about 'full archives' in style.css now:
+	full archives is now a page template available on page creation screen
