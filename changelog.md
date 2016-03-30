@@ -215,3 +215,6 @@ note:
 
 1.5.0
 -remove unnecessary comments, spaces
+
+1.7.0
+-bugfix to change 'stargazer' to 'fremont_cut' in footer
