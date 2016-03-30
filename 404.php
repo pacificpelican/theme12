@@ -20,15 +20,6 @@ get_header(); ?>
 
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
-					<?php if ( greenlake_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php // _e( 'Most Used Categories', 'fremont-cut' ); ?></h2>
-						<ul>
-
-						</ul>
-					</div><!-- .widget -->
-					<?php endif; ?>
-
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 

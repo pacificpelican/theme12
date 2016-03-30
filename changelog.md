@@ -201,3 +201,14 @@ note:
 
 1.1.0
 -rename theme to Fremont Cut to comply with WordPress.org theme rules
+
+1.4.0
+-update theme to further comply with requirements of WordPress
+-prefix changed for functions etc. from greenlake to fremont_cut
+-change category and tag section to work with translation;
+	categories and tags link to their respective pages now
+-remove custom meta section from header
+-remove unused _s files greenlake.pot and rtl.css
+-remove non-functioning 'most-used-categories' section from 404
+-modify footer for better translatability
+-template-page-full-archives.php replaces page-full-archives.php

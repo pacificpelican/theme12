@@ -12,7 +12,7 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
 
-if ( ! function_exists( 'greenlake_setup' ) ) :
+if ( ! function_exists( 'fremont_cut_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -20,13 +20,13 @@ if ( ! function_exists( 'greenlake_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function greenlake_setup() {
+function fremont_cut_setup() {
 
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on Green Lake, use a find and replace
-	 * to change 'greenlake' to the name of your theme in all the template files
+	 * to change 'fremont_cut' to the name of your theme in all the template files
 	 */
 	load_theme_textdomain( 'fremont-cut', get_template_directory() . '/languages' );
 
@@ -70,20 +70,20 @@ function greenlake_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'greenlake_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'fremont_cut_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
 }
-endif; // greenlake_setup
-add_action( 'after_setup_theme', 'greenlake_setup' );
+endif; // fremont_cut_setup
+add_action( 'after_setup_theme', 'fremont_cut_setup' );
 
 /**
  * Register widget area.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
-function greenlake_widgets_init() {
+function fremont_cut_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'fremont-cut' ),
 		'id'            => 'sidebar-1',
@@ -94,28 +94,28 @@ function greenlake_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 }
-add_action( 'widgets_init', 'greenlake_widgets_init' );
+add_action( 'widgets_init', 'fremont_cut_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function greenlake_scripts() {
+function fremont_cut_scripts() {
 
 //  ----------------------------
 	$themeloc = esc_url( get_template_directory_uri() );
 //  ----------------------------
 
-	wp_enqueue_style( 'greenlake-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'fremont_cut-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'greenlake-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'fremont_cut-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
-	wp_enqueue_script( 'greenlake-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'fremont_cut-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'greenlake_scripts' );
+add_action( 'wp_enqueue_scripts', 'fremont_cut_scripts' );
 
 /**
  * Implement the Custom Header feature.
@@ -141,3 +141,21 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+function fremont_cut_get_site_link() 
+{
+	$loc = network_site_url( '/' );
+	$name_s = get_bloginfo( 'name' );
+	return "<a href='" . $loc . "'>". $name_s . "</a>";
+}
+
+function fremont_cut_get_wp_link()
+{
+	return "<a href='https://wordpress.org'>WordPress</a>";
+}
+
+function fremont_cut_get_theme_link() 
+{
+	return "<a href='http://djmcloud.danieljmckeown.com/theme-12/'>Fremont Cut</a>";
+}
+

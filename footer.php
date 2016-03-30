@@ -10,15 +10,15 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( home_url() ); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a> <i><?php bloginfo( 'description' ); ?></i>
-			|
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'fremont-cut' ) ); ?>"><?php printf( __( 'Powered by %s', 'fremont-cut' ), 'WordPress' ); ?></a>
-			<span class="sep"> & </span>
-			<?php echo "Fremont Cut "; ?>
-			<?php echo " by <a href='http://danmckeown.info/' rel='designer'>Dan McKeown</a>"; ?>
-		</div><!-- .site-info -->
+	<footer id="colophon" class="site-footer site-info" role="contentinfo">
+		<p class="credit">
+					<?php printf(	//	 via: https://github.com/justintadlock/stargazer/blob/master/footer.php#L16-L20
+						// Translators: 1 is current year, 2 is site name/link, 3 is WordPress name/link, and 4 is theme name/link. */
+						__( 'Copyright &#169; %1$s %2$s. Powered by %3$s and %4$s.', 'stargazer' ),
+						date_i18n( 'Y' ), fremont_cut_get_site_link(), fremont_cut_get_wp_link(), fremont_cut_get_theme_link()
+					); ?>
+		</p><!-- .credit -->
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

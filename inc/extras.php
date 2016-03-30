@@ -13,7 +13,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function greenlake_body_classes( $classes ) {
+function fremont_cut_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -21,7 +21,7 @@ function greenlake_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'greenlake_body_classes' );
+add_filter( 'body_class', 'fremont_cut_body_classes' );
 
 if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	/**
@@ -31,7 +31,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	 * @param string $sep Optional separator.
 	 * @return string The filtered title.
 	 */
-	function greenlake_wp_title( $title, $sep ) {
+	function fremont_cut_wp_title( $title, $sep ) {
 		if ( is_feed() ) {
 			return $title;
 		}
@@ -54,7 +54,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 
 		return $title;
 	}
-	add_filter( 'wp_title', 'greenlake_wp_title', 10, 2 );
+	add_filter( 'wp_title', 'fremont_cut_wp_title', 10, 2 );
 
 	/**
 	 * Title shim for sites older than WordPress 4.1.
@@ -62,10 +62,10 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	 * @link https://make.wordpress.org/core/2014/10/29/title-tags-in-4-1/
 	 * @todo Remove this function when WordPress 4.3 is released.
 	 */
-	function greenlake_render_title() {
+	function fremont_cut_render_title() {
 		?>
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
 		<?php
 	}
-	add_action( 'wp_head', 'greenlake_render_title' );
+	add_action( 'wp_head', 'fremont_cut_render_title' );
 endif;
