@@ -1,5 +1,3 @@
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpacificpelican%2Ftheme12.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpacificpelican%2Ftheme12?ref=badge_shield)
-
 [Fremont Cut](http://djmcloud.danieljmckeown.com/theme-12/) by [Dan McKeown](http://danmckeown.info) and [Love Birds Consulting](http://lovebirdsconsulting.com).
 =======
 
@@ -11,6 +9,4 @@ It runs on [WordPress](http://wordpress.org) and is licensed under the GNU GPL, 
 
 It was started in November 2015 and more information is available in the [style.css](style.css) file.
 
-
-## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpacificpelican%2Ftheme12.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpacificpelican%2Ftheme12?ref=badge_large)
+![fremontCutImg](Fremont-Cut-at-Lake-Union-March2016byDanMcKeown1200w.jpg)
